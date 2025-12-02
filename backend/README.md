@@ -1,0 +1,11 @@
+.evn:
+DB_NAME=a
+DB_USER=root
+DB_PASS=13124
+DB_HOST=localhost
+DB_PORT=3306
+JWT_SECRET=your_jwt_secret_key
+JWT_EXPIRES_IN=3600
+BCRYPT_SALT_ROUNDS=10
+PORT=3000
+DB_HOST_TEST=localhost# EcomMirnaDelice
