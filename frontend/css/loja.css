@@ -1,0 +1,103 @@
+/* =========================================
+   ESTILO DA PÁGINA DE LOJA (Mirna's Delice)
+   ========================================= */
+
+.hero-loja {
+    padding: 40px 5%;
+    /* Fundo escuro para contrastar com os cards claros */
+    background-color: var(--cor-texto); 
+    background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 20px 20px; /* Textura sutil */
+    min-height: calc(100vh - 150px); /* Ajuste conforme tamanho do header/footer */
+}
+
+.coluna-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#listaProdutos {
+    display: grid;
+    /* Grid responsivo automático */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+/* =========================================
+   CARD DO PRODUTO
+   ========================================= */
+.produto-card {
+    background-color: var(--cor-fundo);
+    border: 2px solid var(--cor-borda); /* Verde oliva */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    
+    /* Sombra dura estilo Retro */
+    box-shadow: 8px 8px 0px var(--cor-laranja);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante que o botão fique alinhado embaixo */
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    /* Sombra muda de cor no hover para dar vida */
+    box-shadow: 12px 12px 0px var(--cor-amarelo);
+    border-color: var(--cor-titulo);
+}
+
+.produto-card img {
+    width: 100%;
+    height: 220px; /* Altura fixa para alinhar os cards */
+    object-fit: contain; /* Garante que a garrafa apareça inteira */
+    margin-bottom: 15px;
+    border-bottom: 2px dashed var(--cor-amarelo); /* Detalhe decorativo */
+    padding-bottom: 10px;
+}
+
+.produto-card h3 {
+    color: var(--cor-titulo); /* Marrom avermelhado */
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.produto-card p {
+    color: var(--cor-texto);
+    font-family: 'Lato', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.produto-card .preco {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--cor-botao); /* Vermelho framboesa para preço */
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Botão de Comprar */
+.produto-card button {
+    background-color: var(--cor-borda); /* Fundo Verde Oliva */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px; /* Botão pílula */
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    transition: all 0.3s ease;  
+}

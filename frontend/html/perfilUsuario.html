@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário - Mirna's Delice</title>
+    <link rel="shortcut icon" href="source/logo.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_perfil.css">
+
+    <!-- JS -->
+    <script src="../js/perfilUsuario.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">
+            <img src="../source/logo.png" alt="Mina's Delice Logo" class="logo-img" onclick="window.location = '../index.html'">
+        </h1>
+        <nav class="nav">
+            <a href="./loja.html">Licores</a>
+            <a href="./carrinho.html">Carrinho</a>
+            <a href="#perfil">Perfil</a>
+            <a href="#" id="btnLogout">Sair</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-perfil">
+        <div class="perfil-container">
+            <h2>Meu Perfil</h2>
+
+            <div class="perfil-card">
+                <div class="perfil-header">
+                    <div class="avatar">
+                        <img src="../source/logo.png" alt="Avatar do usuário" id="avatarUsuario">
+                    </div>
+                    <div class="perfil-info">
+                        <h3 id="nomeUsuario">Carregando...</h3>
+                        <p id="tipoUsuario">Carregando...</p>
+                    </div>
+                </div>
+
+                <div class="perfil-dados">
+                    <div class="dados-section">
+                        <h4>Informações Pessoais</h4>
+                        <div class="dados-grid">
+                            <div class="dado-item">
+                                <label>Nome:</label>
+                                <span id="nomeCompleto">-</span>
+                            </div>
+                            <div class="dado-item">
+                                <label>Email:</label>
+                                <span id="emailUsuario">-</span>
+                            </div>
+                            <div class="dado-item">
+                                <label>Telefone:</label>
+                                <span id="telefoneUsuario">-</span>
+                            </div>
+                            <div class="dado-item">
+                                <label>CPF:</label>
+                                <span id="cpfUsuario">-</span>
+                            </div>
+                            <div class="dado-item">
+                                <label>RG:</label>
+                                <span id="identidadeUsuario">-</span>
+                            </div>
+                            <div class="dado-item">
+                                <label>Data de Cadastro:</label>
+                                <span id="dataCadastro">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="acoes-section">
+                        <h4>Ações da Conta</h4>
+                        <div class="acoes-grid">
+                            <button id="btnEditarPerfil" class="btn btn-primary">Editar Perfil</button>
+                            <button id="btnAlterarSenha" class="btn btn-secondary">Alterar Senha</button>
+                            <button id="btnHistoricoCompras" class="btn btn-info">Histórico de Compras</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal de Edição (inicialmente oculto) -->
+            <div id="modalEditar" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Editar Perfil</h3>
+                    <form id="formEditarPerfil">
+                        <input type="text" id="editNome" placeholder="Nome completo" required>
+                        <input type="email" id="editEmail" placeholder="Email" required>
+                        <input type="tel" id="editTelefone" placeholder="Telefone" required>
+                        <input type="text" id="editIdentidade" placeholder="RG (opcional)">
+                        <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Mirna's Delice. Todos os direitos reservados.</p>
+        <p>Política de Privacidade | Termos de Uso | Contato</p>
+    </footer>
+</body>
+</html>

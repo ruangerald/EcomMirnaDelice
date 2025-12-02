@@ -1,0 +1,196 @@
+/* Perfil Usuario Page Styles for Mina's Delice */
+
+.hero-perfil {
+    padding: 2rem;
+    background-color: #FCF7E8;
+    min-height: calc(100vh - 200px);
+}
+
+.perfil-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.perfil-container h2 {
+    color: #5F1C20;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.perfil-card {
+    background-color: #FCF7E8;
+    border: 2px solid #5F1C20;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(95, 28, 32, 0.1);
+}
+
+.perfil-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #5F1C20;
+}
+
+.perfil-info h3 {
+    color: #5F1C20;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.perfil-info p {
+    color: #5F1C20;
+    font-weight: bold;
+}
+
+.perfil-dados {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dados-section, .acoes-section {
+    background-color: #f9f5e8;
+    border: 1px solid #5F1C20;
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+.dados-section h4, .acoes-section h4 {
+    color: #5F1C20;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.dados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.dado-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.dado-item label {
+    font-weight: bold;
+    color: #5F1C20;
+    margin-bottom: 0.25rem;
+}
+
+.dado-item span {
+    color: #5F1C20;
+}
+
+.acoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #5F1C20;
+    color: #FCF7E8;
+}
+
+.btn-primary:hover {
+    background-color: #4a1518;
+}
+
+.btn-secondary {
+    background-color: #d4a574;
+    color: #5F1C20;
+}
+
+.btn-secondary:hover {
+    background-color: #c49a68;
+}
+
+.btn-info {
+    background-color: #FCF7E8;
+    color: #5F1C20;
+    border: 2px solid #5F1C20;
+}
+
+.btn-info:hover {
+    background-color: #5F1C20;
+    color: #FCF7E8;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #FCF7E8;
+    margin: 15% auto;
+    padding: 2rem;
+    border: 2px solid #5F1C20;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #5F1C20;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #d4a574;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-perfil {
+        padding: 1rem;
+    }
+
+    .perfil-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar {
+        margin-right: 0;
+    }
+
+    .dados-grid, .acoes-grid {
+        grid-template-columns: 1fr;
+    }
+}

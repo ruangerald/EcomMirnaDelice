@@ -1,0 +1,40 @@
+/* Home Page Styles for Mina's Delice */
+
+.hero-home {
+    padding: 2rem;
+    background-color: #FCF7E8;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-home h1 {
+    color: #5F1C20;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-home p {
+    color: #5F1C20;
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-home {
+        padding: 1rem;
+    }
+
+    .hero-home h1 {
+        font-size: 2rem;
+    }
+
+    .hero-home p {
+        font-size: 1rem;
+    }
+}

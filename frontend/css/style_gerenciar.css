@@ -1,0 +1,136 @@
+/* Gerenciar Produto Page Styles for Mina's Delice */
+
+.hero-gerenciar {
+    padding: 2rem;
+    background-color: #FCF7E8;
+    min-height: calc(100vh - 200px);
+}
+
+.conteudo-gerenciar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.table-wrapper {
+    background-color: #FCF7E8;
+    border: 2px solid #5F1C20;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(95, 28, 32, 0.1);
+}
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela th, .tabela td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #5F1C20;
+}
+
+.tabela th {
+    background-color: #5F1C20;
+    color: #FCF7E8;
+    font-weight: bold;
+}
+
+.tabela tr:nth-child(even) {
+    background-color: #f9f5e8;
+}
+
+.bottom-column {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.gerenciar-box {
+    background-color: #FCF7E8;
+    border: 2px solid #5F1C20;
+    border-radius: 10px;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(95, 28, 32, 0.1);
+}
+
+.gerenciar-box h1 {
+    color: #5F1C20;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.gerenciar-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.gerenciar-box input, .gerenciar-box select {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #5F1C20;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.gerenciar-box input:focus, .gerenciar-box select:focus {
+    outline: none;
+    border-color: #d4a574;
+    box-shadow: 0 0 5px rgba(212, 165, 116, 0.5);
+}
+
+.gerenciar-box button {
+    background-color: #5F1C20;
+    color: #FCF7E8;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.gerenciar-box button:hover {
+    background-color: #4a1518;
+}
+
+.alerta-atualiza, .alerta-delete {
+    font-size: 0.9rem;
+    color: #5F1C20;
+    margin-top: 0.5rem;
+}
+
+.delete-box {
+    border-color: #d4a574;
+}
+
+.delete-box h1 {
+    color: #d4a574;
+}
+
+.estoque-box {
+    border-color: #FCF7E8;
+}
+
+.estoque-box h1 {
+    color: #5F1C20;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-gerenciar {
+        padding: 1rem;
+    }
+
+    .bottom-column {
+        flex-direction: column;
+    }
+
+    .gerenciar-box {
+        min-width: auto;
+    }
+}

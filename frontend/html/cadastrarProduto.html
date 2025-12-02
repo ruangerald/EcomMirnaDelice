@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Licores - Mirna's Delice</title>
+    <link rel="shortcut icon" href="source/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style_cadProduto.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/cadastrarProduto.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">
+            <img src="../source/logo.png" alt="Mina's Delice Logo" class="logo-img" onclick="window.location = '../index.html'">
+        </h1>
+        <nav class="nav">
+            <!-- Links -->
+            <a href="./gerenciarProduto.html">Gerenciar Licores</a>
+            <a href="./perfilUsuario.html">
+                <span id="nomeUsuario" class="nome-usuario">Usuário</span>
+            </a>
+            <a href="#" id="btnLogout">Sair</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-cadastro">
+        <div class="cadastro-box" id="cadastro">
+            <h2>Insira as informações</h2>
+            <form>
+                <input type="text" id="nome" placeholder="Nome do licor" required>
+                <input type="text" id="descricao" placeholder="Descrição (opcional)">
+                <input type="text" id="modelo" placeholder="Tipo/Marca" required>
+                <input type="text" id="preco" placeholder="Preço (ex: 49.90)" required>
+                <input type="text" id="imagem_url" placeholder="Link da imagem (opcional)">
+                <button type="submit" id="btnCadProduto">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2025 Mina's Delice. Todos os direitos reservados.</p>
+        <p>Política de Privacidade | Termos de Uso | Contato</p>
+    </footer>
+
+</body>
+
+</html>

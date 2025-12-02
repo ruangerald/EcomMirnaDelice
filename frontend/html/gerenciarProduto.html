@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="source/logo.png" type="image/x-icon">
+    <title>Gerenciar - Licores - Mirna's Delice</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_gerenciar.css">
+    <script src="../js/gerenciarProduto.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">
+            <img src="../source/logo.png" alt="Mina's Delice Logo" class="logo-img"
+                onclick="window.location = '../index.html'">
+        </h1>
+        <nav class="nav">
+            <!-- Links -->
+            <a href="./cadastrarProduto.html">Cadastrar Licores</a>
+            <a href="./perfilUsuario.html">
+                <span id="nomeUsuario" class="nome-usuario">Usuário</span>
+            </a>
+            <a href="#" id="btnLogout">Sair</a>
+        </nav>
+    </header>
+
+
+    <section id="hero" class="hero-gerenciar">
+        <div class="conteudo-gerenciar">
+
+            <!-- TABELA -->
+            <div class="table-wrapper">
+                <div class="tabela" id="resListar"></div>
+            </div>
+
+            <div class="bottom-column">
+
+                <!-- ATUALIZAR PRODUTO -->
+                <div class="gerenciar-box" id="cadProduto" required>
+                    <h1>Atualizar Licor</h1>
+                    <form>
+                        <input type="number" id="codProduto" placeholder="Código do licor">
+                        <div class="espaco"></div>
+                        <h2>Insira novos dados</h2>
+                        <input type="text" id="nome" placeholder="Nome do licor" required>
+                        <input type="text" id="descricao" placeholder="Descrição">
+                        <input type="text" id="modelo" placeholder="Tipo/Marca" required>
+                        <input type="text" id="preco" placeholder="Preço (ex: 49.90)" required>
+                        <input type="text" id="imagem_url" placeholder="Link da imagem">
+                        <button type="submit" id="btnAtualizarProduto">Atualizar</button>
+                        <p class="alerta-atualiza">(Pode atualizar somente um campo)</p>
+                    </form>
+                </div>
+
+                <!-- EXCLUIR PRODUTO -->
+                <div class="gerenciar-box delete-box">
+                    <h1>Apagar Licor</h1>
+                    <form id="formDelete">
+                        <input type="number" id="codDelete" placeholder="Código do licor">
+                        <button type="submit" id="btnDelete">Excluir</button>
+                        <p class="alerta-delete">Esta ação é irreversível ⚠️</p>
+                    </form>
+                </div>
+
+                <div class="gerenciar-box estoque-box">
+                    <h1>Movimentar Estoque</h1>
+                    <form id="formEstoque">
+                        <input type="number" id="idProduto" placeholder="Código do licor" required>
+                        <select id="tipo" required>
+                            <option value="">Tipo da movimentação</option>
+                            <option value="ENTRADA">Entrada (+)</option>
+                            <option value="SAIDA">Saída (-)</option>
+                        </select>
+                        <input type="number" id="qtdeMovimento" placeholder="Quantidade" required>
+                        <button type="submit" id="btnMovimentar">Aplicar</button>
+                        <p class="alerta-delete">Atualiza somente quantidade em estoque</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>© 2025 Mirna's Delice. Todos os direitos reservados.</p>
+        <p>Política de Privacidade | Termos de Uso | Contato</p>
+    </footer>
+
+</body>
+
+</html>

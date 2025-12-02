@@ -1,0 +1,114 @@
+/* =========================================
+   ESTILO ESPECÍFICO DO LOGIN
+   ========================================= */
+
+/* Fundo da seção de login */
+.hero-login {
+    background-color: var(--cor-texto); /* Fundo escuro para contraste */
+    flex: 1; /* Ocupa o espaço restante da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 20px 20px; /* Textura sutil de bolinhas */
+}
+
+/* Caixa do Formulário */
+.login-box {
+    background-color: var(--cor-fundo);
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    border: 3px solid var(--cor-amarelo);
+    /* Sombra Retro dura igual aos cards do global */
+    box-shadow: 10px 10px 0px var(--cor-laranja); 
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.login-box:hover {
+    transform: translateY(-2px);
+}
+
+/* Título "Entrar" */
+.login-box h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: var(--cor-titulo);
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+}
+
+/* Campos de Input */
+.login-box input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid var(--cor-borda);
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-box input:focus {
+    border-color: var(--cor-laranja);
+    box-shadow: 0 0 8px rgba(229, 122, 44, 0.3);
+}
+
+/* Botão de Acessar */
+#btnLogin {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--cor-botao);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#btnLogin:hover {
+    background-color: var(--cor-botao-hover);
+    transform: scale(1.02);
+}
+
+/* Link de Cadastro */
+.login-box p {
+    font-size: 0.95rem;
+    color: var(--cor-texto);
+}
+
+.login-box a {
+    color: var(--cor-titulo);
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.login-box a:hover {
+    color: var(--cor-laranja);
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 30px 20px;
+        box-shadow: 5px 5px 0px var(--cor-laranja);
+    }
+    
+    .login-box h2 {
+        font-size: 2.5rem;
+    }
+}
